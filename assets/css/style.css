@@ -1,29 +1,56 @@
+ /* * {
+    margin: 0;
+    padding: 0;
+    background-color: Grey;
 
+  } */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url(../images/squared_metal/squared_metal_@2X.png);
-    border-color: #dddddd;
+    background-image: url(../images/squared_metal/squared_metal.png);
+    /* border-color: #dddddd; */
     color:#777777;
     /*   If we want webpage to be adjusted along with screensize, we should not put a hardcoded width of 960px.
     And also we can use percentage width for #header, footer and nav selector   */
-    width: 960px;
+    /* width: 960px; */
     font-size: 15px;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+
+
+.HeaderContent{
+    min-height: calc(100vh - 55px);
+    width: 960px;
+    margin: 0 auto;
+    /* border:30px solid transparent; */
+    /* margin-bottom: 50px */
+
+
+}
+
+header {
+    /* border-color: #cccccc; */
     background-color: #ffffff;
-    border-color: #cccccc;
+    margin-bottom: 30px;
+    height: 66px;
+    width: 100%;
+    /* background-image:none; */
+    /* position: relative; */
+    
 }
 
-h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-    /* font-weight: bold; */
+.HeaderDiv {
+
+    /* margin-top: 68px; */
+    /* width: 100%; */
+    margin: 0 auto;
+
 }
 
 .header1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background: #4aaaa5;
     color: white;
     padding: 20px;
@@ -39,11 +66,20 @@ nav{
     width: 670px;
     padding: 20px;
     padding-right:0;
+    /* margin:20px;
+    margin-right: 0; */
     text-align: right;
+    display: block;
 }
 
-
-footer{
+.header2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    border-bottom: 2px solid #adacac;
+    padding-bottom: 10px;
+    /* font-weight: bold; */
+}
+footer {
     background: #666666;
     color: white;
     clear: both;
@@ -52,16 +88,22 @@ footer{
     padding-top: 30px;
     padding-bottom: 5px;
     border-top: 5px solid #4aaaa5;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
-.div1 {
+.content{
     clear: both;
     padding: 20px;
     background: #ffffff;
+    /* border-top: 80px; */
+    overflow: auto;
+    position: relative;
+    margin: 20px, 20px, 20px;
+
+
 }
 
 img {
@@ -81,4 +123,5 @@ a{
 p{
     line-height: 1.6;
 }
+
 
